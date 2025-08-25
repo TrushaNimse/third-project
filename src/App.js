@@ -4,10 +4,10 @@ import { useState } from 'react';
 
 function App() {
   const [student, setStudent] = useState([{ srno: 1, name: "Trusha", marks: 95 },
-  { srno: 1, name: "Shravani", marks: 92 },
-  { srno: 1, name: "Gaurav", marks: 93 },
-  { srno: 1, name: "Rutuja", marks: 91 },
-  { srno: 1, name: "Shardul", marks: 93 }]);
+  { srno: 2, name: "Shravani", marks: 92 },
+  { srno: 3, name: "Gaurav", marks: 93 },
+  { srno: 4, name: "Rutuja", marks: 91 },
+  { srno: 5, name: "Shardul", marks: 93 }]);
 
 
   // const student=[{ srno: 1, name: "Trusha", marks: 95 },
