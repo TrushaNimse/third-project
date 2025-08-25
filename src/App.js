@@ -1,19 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [student, setStudent] = useState([{ srno: 1, name: "Trusha", marks: 95 },
+  { srno: 1, name: "Shravani", marks: 92 },
+  { srno: 1, name: "Gaurav", marks: 93 },
+  { srno: 1, name: "Rutuja", marks: 91 },
+  { srno: 1, name: "Shardul", marks: 93 }]);
 
-  const person = {
-    name: "Trusha",
-    age: 19,
-    college: "Bj College"
-  };
+
+  // const student=[{ srno: 1, name: "Trusha", marks: 95 },
+  // { srno: 1, name: "Shravani", marks: 92 },
+  // { srno: 1, name: "Gaurav", marks: 93 },
+  // { srno: 1, name: "Rutuja", marks: 91 },
+  // { srno: 1, name: "Shardul", marks: 93 }]
   return (
     <div>
-      {/* <h3>Person Details</h3> */}
-      <h1>Name: {person.name}</h1>
-      <h2>Age: {person.age}</h2>
-      <h3>College: {person.college}</h3>
+      <table border="1">
+        <tr>
+          <th>Sr.no</th>
+          <th>Name</th>
+          <th>Marks</th>
+        </tr>
+        {student.map((singleElement) => (
+          <tr>
+            <td>{singleElement.srno}</td>
+            <td>{singleElement.name}</td>
+            <td>{singleElement.marks}</td>
+          </tr>
+        ))}
+      </table>
     </div>
   );
 }
