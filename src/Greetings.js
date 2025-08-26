@@ -1,6 +1,9 @@
-function Greetings(){
-    return(
-        <h1>Hello World</h1>
+function Greetings(props) {
+    return (
+      props.nameList.map((singleElement)=>{
+      return  <div>Hello {singleElement}</div>
+      })
+            
     )
 }
 export default Greetings;
